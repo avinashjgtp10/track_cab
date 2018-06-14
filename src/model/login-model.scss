@@ -1,0 +1,33 @@
+page-login-model {
+    ion-content{
+          
+    .scroll-content{
+        overflow: hidden;
+    }
+
+    div{
+        .icon{
+            background: url("../assets/imgs/icon.png")  no-repeat!important ;
+            background-size: cover;
+
+            img{
+                height: 100px !important; 
+            }
+        }
+    }
+    section {
+        background-color: #fdefef  !important;
+        .item-md {
+            background-color: transparent !important;
+            color: black;
+        .loginBtn {
+            height: 40px !important;
+            text-transform: none;
+            background-color: #e88e07 !important;
+         color: white !important;
+        }
+    }
+    }
+        
+}
+}

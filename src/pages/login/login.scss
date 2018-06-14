@@ -1,0 +1,36 @@
+page-login {
+
+
+ion-content {
+    background: url("../assets/imgs/background.png") !important;
+    background-size: cover;
+}
+ion-footer {
+    
+    .loginBtn{
+        border:1px solid !important;
+        width:40% !important;
+        color: white !important;
+        text-transform: none;
+        background-color: #e88e07 !important;
+    }
+        .registerBtn {
+            float: right !important;
+            background-color: black !important;
+            text-transform: none;
+            width: 40% !important;
+            color: white;
+        }
+        .facebookBtn {
+            background-color: blue !important;
+            text-transform: none;
+            color: white !important;
+            width: 15%;
+            border-radius: 20px 20px 0px 0px;
+            span{
+                font-size: 26px !important;
+            }
+        }
+    
+}
+}

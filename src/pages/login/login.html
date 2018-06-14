@@ -1,0 +1,37 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="login-content" padding>
+  <ion-slides pager>
+    <ion-slide>
+      <img src="../assets/imgs/img.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="../assets/imgs/img.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="../assets/imgs/img.png">
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <button ion-button icon-start outline clear class="loginBtn" (click)="login()">
+      <ion-icon ios="ios-exit" md="md-exit"></ion-icon>
+      Login
+    </button>
+    <button ion-button clear class="facebookBtn" (click)="facebook()">
+      <!-- <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon> -->
+      <span>f</span>
+    </button>
+    <button ion-button icon-end outline class="registerBtn" (click)="register()" clear>
+      <ion-icon ios="ios-exit" md="md-exit"> </ion-icon>
+      Register
+    </button>
+  </ion-toolbar>
+</ion-footer>
