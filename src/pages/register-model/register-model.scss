@@ -13,8 +13,26 @@ page-register-model {
 ion-content {
     ion-list{
         ion-list-header{
-            margin-left:50px; 
-        }          
+            margin-left:70px; 
+            img{
+                height: 100px !important;
+            }
+       
+        }    
+        ion-label{
+            color: balck !important;
+        }   
+        
+        ion-item {
+          .signupBtn {
+            background-color: #e88e07 !important;
+            color: white;
+            text-transform: none;
+            font-weight: bold;
+            font-size: 17px !important;
+            height: 40px !important;
+          }
+        }
     }
 }
 

@@ -1,7 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, ModalController } from 'ionic-angular';
 import { LoginModelPage } from '../../model/login-model';
-import { RegisterModelPage } from '../register-model/register-model'
+import { RegisterModelPage } from '../register-model/register-model';
+
+
 /**
  * Generated class for the LoginPage page.
  *

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>login_model</ion-title>
+    <ion-title>login</ion-title>
     <ion-buttons start>
       <button ion-button (click)="dismiss()">
         <span ion-text color="primary" showWhen="ios">Cancel</span>
@@ -29,13 +29,13 @@
 
   <section>
     <ion-item no-lines>
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label floating>Mobile Number</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
     </ion-item>
 
     <ion-item no-lines>
       <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
     <ion-item no-lines>

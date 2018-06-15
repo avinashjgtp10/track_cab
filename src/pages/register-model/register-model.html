@@ -14,12 +14,75 @@
 
 
 <ion-content padding>
+
   <ion-list no-lines>
     <ion-list-header no-lines>
       <img src="../../assets/imgs/userProfile.png">
     </ion-list-header>
-    <ion-item>Terminator II</ion-item>
-    <ion-item>The Empire Strikes Back</ion-item>
-    <ion-item>Blade Runner</ion-item>
+
+    <ion-item>Select User</ion-item>
+    <ion-row radio-group [(ngModel)]="userType" (ionChange)="user($event)">
+      <ion-col col-5>
+        <ion-item>
+          <ion-label>Driver</ion-label>
+          <ion-radio value="driver"></ion-radio>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label> Pooler /Rider</ion-label>
+          <ion-radio value="pooler"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="userDetails.firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Last Name</ion-label>
+      <ion-input type="text" [(ngModel)]="userDetails.lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email Id:</ion-label>
+      <ion-input type="text" [(ngModel)]="userDetails.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="userDetails.password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Mobile Number</ion-label>
+      <ion-input type="text" [(ngModel)]="userDetails.mobileNumber"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>City</ion-label>
+      <ion-input type="text" [(ngModel)]="userDetails.city"></ion-input>
+    </ion-item>
+    <ion-item>Select Gender</ion-item>
+    <ion-row radio-group [(ngModel)]="gender" (ionChange)="getGender($event)">
+      <ion-col col-5>
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="male"></ion-radio>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label> Female</ion-label>
+          <ion-radio value="female"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item>
+      <button ion-button full clear class="signupBtn" (click)="register()">Sign Up</button>
+    </ion-item>
+
   </ion-list>
+
 </ion-content>
