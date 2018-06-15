@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, ModalController } from 'ionic-angular';
 import { LoginModelPage } from '../../model/login-model';
+import { RegisterModelPage } from '../register-model/register-model'
 /**
  * Generated class for the LoginPage page.
  *
@@ -28,11 +29,13 @@ export class LoginPage {
     this.slides.slideTo(2, 500);
   }
 
-  login(){
-    let model= this.modalCtrl.create(LoginModelPage);
+  login() {
+    let model = this.modalCtrl.create(LoginModelPage);
     model.present();
   }
 
-
+  register() {
+    this.navCtrl.push(RegisterModelPage);
+  }
 
 }

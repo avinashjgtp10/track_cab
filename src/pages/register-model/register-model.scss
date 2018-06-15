@@ -1,0 +1,21 @@
+page-register-model {
+    ion-header{
+    .toolbar-title {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        text-align: center !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+ion-content {
+    ion-list{
+        ion-list-header{
+            margin-left:50px; 
+        }          
+    }
+}
+
+}
